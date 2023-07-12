@@ -5,7 +5,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/eternal-flame-AD/go-termux/internal/chanbuf"
+	"github.com/dolfly/termux/internal/chanbuf"
 )
 
 // LocationProvider enumerates the location sources provided by the device

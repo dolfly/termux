@@ -1,6 +1,6 @@
 # go-termux
 
-[![API Documentation](https://img.shields.io/badge/api-GoDoc-blue.svg?style=flat-square)](https://godoc.org/github.com/eternal-flame-AD/go-termux)
+[![API Documentation](https://img.shields.io/badge/api-GoDoc-blue.svg?style=flat-square)](https://godoc.org/github.com/dolfly/termux)
 
 Golang wrapper for termux:API. This package calls termux:API methods directly so that this package would work without termux-api package installed.
 
@@ -14,7 +14,7 @@ package main
 import (
         "fmt"
 
-        tm "github.com/eternal-flame-AD/go-termux"
+        tm "github.com/dolfly/termux/pkg/termux"
 )
 
 func main() {
@@ -30,7 +30,7 @@ func main() {
 ```golang
 package main
 
-import tm "github.com/eternal-flame-AD/go-termux"
+import tm "github.com/dolfly/termux/pkg/termux"
 
 func main() {
     if err := tm.ClipboardSet("ummmm"); err != nil {
@@ -44,7 +44,7 @@ func main() {
 package main
 
 import (
-        tm "github.com/eternal-flame-AD/go-termux"
+        tm "github.com/dolfly/termux/pkg/termux"
 )
 
 func main() {

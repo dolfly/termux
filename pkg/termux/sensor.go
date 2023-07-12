@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/eternal-flame-AD/go-termux/internal/chanbuf"
+	"github.com/dolfly/termux/internal/chanbuf"
 )
 
 // SensorList acquires a list of available sensors on the device

@@ -8,6 +8,8 @@ import (
 	"strings"
 )
 
+const CMD_AM = "/data/data/com.termux/files/usr/bin/am"
+
 type Broadcast struct {
 	User         int
 	Component    string
@@ -102,6 +104,6 @@ func (c *Broadcast) Send(ctx context.Context) {
 			args = append(args, "--esa", key, t.String())
 		}
 	}
-	cmd := exec.CommandContext(ctx, "/data/data/com.termux/files/usr/bin/am", args...)
+	cmd := exec.CommandContext(ctx, CMD_AM, args...)
 	go cmd.Run()
 }

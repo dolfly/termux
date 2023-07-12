@@ -3,7 +3,7 @@
 	Example:
 	package main
 
-	import tm "github.com/eternal-flame-AD/go-termux"
+	import tm "github.com/dolfly/termux/pkg/termux"
 
 	func main() {
 		if err := tm.ClipboardSet("ummmm"); err != nil {

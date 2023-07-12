@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/eternal-flame-AD/go-termux/internal/intent"
+	"github.com/dolfly/termux/internal/intent"
 
-	"github.com/eternal-flame-AD/go-termux/internal/unix"
+	"github.com/dolfly/termux/internal/unix"
 )
 
 const termuxApiComponent = "com.termux.api/.TermuxApiReceiver"

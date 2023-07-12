@@ -1,6 +1,6 @@
-module github.com/eternal-flame-AD/go-termux
+module github.com/dolfly/termux
 
-go 1.17
+go 1.21
 
 require github.com/twinj/uuid v1.0.0
 

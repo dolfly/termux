@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eternal-flame-AD/go-termux/internal/api"
-	_io "github.com/eternal-flame-AD/go-termux/internal/io"
+	"github.com/dolfly/termux/internal/api"
+	_io "github.com/dolfly/termux/internal/io"
 )
 
 // GlobalTimeout The global timeout to non-persistent and non-time-consumingn operations
