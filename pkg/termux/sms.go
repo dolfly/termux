@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 )
 
-// SMSBoxType enumberates available sms box types
+// SMSBoxType enumerates available sms box types
 type SMSBoxType int
 
 const (
@@ -36,7 +36,7 @@ type SMS struct {
 func SMSList(limit int, offset int, box SMSBoxType) ([]SMS, error) {
 	buf := bytes.NewBuffer([]byte{})
 	if err := exec(nil, buf, "SmsInbox", map[string]interface{}{
-		"type":   box,
+		"type":   int(box),
 		"limit":  limit,
 		"offset": offset,
 	}, ""); err != nil {
@@ -47,7 +47,7 @@ func SMSList(limit int, offset int, box SMSBoxType) ([]SMS, error) {
 		return nil, err
 	}
 	l := make([]SMS, 0)
-	if err := json.Unmarshal(res, l); err != nil {
+	if err := json.Unmarshal(res, &l); err != nil {
 		return nil, err
 	}
 	return l, nil
